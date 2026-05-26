@@ -6,34 +6,36 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 
-# Local data and generated outputs
+# Raw, restricted, or licensed cohort data must never be committed.
+raw_data/
+data/
+downloads_inbox/
 downloads/
-raw/
-csv/
-aux/
-analysis/
-outputs/
-output/
-results/
-figures_png/
-tables_main_text/
-*.zip
-*.xlsx
-*.xls
-*.pdf
-*.csv
-*.json
-*.log
-
-# Restricted or local-only data
-data/raw/
-data/mimic/
-data/eicu/
-data/amsterdam/
+*.dta
+*.sas7bdat
+*.xpt
+*.sav
+*.parquet
+*.feather
 *.duckdb
 *.sqlite
 *.db
-*.parquet
-*.sas7bdat
-*.dta
-*.xpt
+
+# Generated local outputs.
+output/
+outputs/
+results/
+reports/
+analysis_outputs/
+figures/
+tables/
+*.zip
+*.log
+
+# Large/manual source documents and office exports.
+*.xlsx
+*.xls
+*.docx
+*.pptx
+*.pdf
+
